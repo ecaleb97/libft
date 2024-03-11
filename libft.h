@@ -4,17 +4,17 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-/*
-    Return zero if the character tests false and returns
-    non-zero if the character tests true
-*/
 int ft_isalpha(int c);
 
-/*
-    Return zero if the character tests false and returns
-    non-zero if the character tests true
-*/
 int ft_isdigit(int c);
+
+int ft_isalnum(int c);
+
+int ft_isascii(int c);
+
+size_t ft_strlen(const char *s);
+
+void    *ft_memset(void *b, int c, size_t len);
 
 #endif
 
