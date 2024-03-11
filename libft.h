@@ -10,6 +10,11 @@
 */
 int ft_isalpha(int c);
 
+/*
+    Return zero if the character tests false and returns
+    non-zero if the character tests true
+*/
+int ft_isdigit(int c);
 
 #endif
 
