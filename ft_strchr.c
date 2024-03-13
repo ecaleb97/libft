@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: prossi <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: cfeliz-r <cfeliz-r@student.your42network.  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/09 14:37:01 by prossi            #+#    #+#             */
-/*   Updated: 2021/09/15 14:44:40 by prossi           ###   ########.fr       */
+/*   Created: 2024/03/13 17:24:11 by cfeliz-r          #+#    #+#             */
+/*   Updated: 2024/03/13 19:12:55 by cfeliz-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 #include "libft.h"
 
@@ -22,5 +23,5 @@ char	*ft_strchr(const char *s, int i)
 	}
 	if (i == '\0')
 		return ((char *)s);
-	return (0);
+     return (0);
 }
