@@ -18,6 +18,9 @@ files = ft_strlen \
 		ft_strncmp \
 		ft_strrchr \
 		ft_bzero \
+		ft_lstadd_back \
+		ft_lstadd_front \
+		ft_lstlast \
 
 
 Compiler = gcc
