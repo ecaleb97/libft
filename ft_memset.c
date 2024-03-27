@@ -6,7 +6,7 @@
 /*   By: envillan <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/12 13:38:13 by envillan          #+#    #+#             */
-/*   Updated: 2024/03/12 13:58:33 by envillan         ###   ########.fr       */
+/*   Updated: 2024/03/20 20:09:45 by envillan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,10 @@ void	*ft_memset(void *b, int c, size_t len)
 	unsigned char	*str;
 
 	str = b;
-	while (len--)
+	while (len > 0)
 	{
 		*str++ = c;
+		len--;
 	}
 	return (b);
 }
