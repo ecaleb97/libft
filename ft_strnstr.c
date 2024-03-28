@@ -6,7 +6,7 @@
 /*   By: envillan <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/28 12:17:34 by envillan          #+#    #+#             */
-/*   Updated: 2024/03/28 12:20:14 by envillan         ###   ########.fr       */
+/*   Updated: 2024/03/28 17:53:56 by envillan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	size_t	j;
 
 	i = 0;
+	if (haystack == NULL && len == 0)
+		return (NULL);
 	if (!*needle)
 		return ((char *)haystack);
 	while (haystack[i] && i < len)
