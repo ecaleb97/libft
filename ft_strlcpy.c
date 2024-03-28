@@ -6,14 +6,14 @@
 /*   By: envillan <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/13 01:00:49 by envillan          #+#    #+#             */
-/*   Updated: 2024/03/13 01:48:10 by envillan         ###   ########.fr       */
+/*   Updated: 2024/03/28 11:43:27 by envillan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *restrict dst,
-			const char *restrict src,
+size_t	ft_strlcpy(char *dst,
+			const char *src,
 			size_t dstsize)
 {
 	size_t	i;

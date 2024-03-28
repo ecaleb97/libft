@@ -6,7 +6,7 @@
 /*   By: envillan <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 15:53:43 by envillan          #+#    #+#             */
-/*   Updated: 2024/03/14 16:02:50 by envillan         ###   ########.fr       */
+/*   Updated: 2024/03/28 13:14:51 by envillan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,16 @@
 
 char	*ft_strchr(const char *s, int i)
 {
+	char	c;
+
+	c = i;
 	while (*s)
 	{
-		if (*s == i)
+		if (*s == c)
 			return ((char *)s);
 		s++;
 	}
-	if (i == '\0')
+	if (c == '\0')
 		return ((char *)s);
 	return (0);
 }

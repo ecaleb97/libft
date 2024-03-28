@@ -5,14 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: envillan <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/13 22:31:46 by envillan          #+#    #+#             */
-/*   Updated: 2024/03/13 23:19:50 by envillan         ###   ########.fr       */
+/*   Created: 2024/03/28 11:43:57 by envillan          #+#    #+#             */
+/*   Updated: 2024/03/28 11:44:01 by envillan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcat(char *restrict dst, const char *restrict src, size_t dstsize)
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
 	size_t	i;
 	size_t	j;

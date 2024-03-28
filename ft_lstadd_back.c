@@ -6,7 +6,7 @@
 /*   By: envillan <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/20 15:52:21 by envillan          #+#    #+#             */
-/*   Updated: 2024/03/20 20:41:51 by envillan         ###   ########.fr       */
+/*   Updated: 2024/03/28 12:03:34 by envillan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,14 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*current;
 
-	current = *lst;
-	while (current->next != NULL)
-		current = current->next;
-	current->next = (t_list *) malloc(sizeof(t_list));
-	current->next = new;
-	current->next->next = NULL;
+	if (lst)
+	{
+		if (*lst)
+		{
+			current = ft_lstlast(*lst);
+			current->next = new;
+		}
+		else
+			*lst = new;
+	}
 }
