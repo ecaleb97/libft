@@ -6,11 +6,12 @@
 /*   By: envillan <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/20 16:13:48 by envillan          #+#    #+#             */
-/*   Updated: 2024/03/20 16:17:00 by envillan         ###   ########.fr       */
+/*   Updated: 2024/04/02 22:56:10 by envillan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
 int	ft_lstsize(t_list *lst)
 {
@@ -19,7 +20,7 @@ int	ft_lstsize(t_list *lst)
 
 	size = 0;
 	current = lst;
-	while (current != NULL)
+	while (current != 0)
 	{
 		current = current->next;
 		size++;
